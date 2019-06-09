@@ -34,10 +34,19 @@ function createMaterial() {
 	// MATERIALS
 	// Student: use the texture '/media/img/cs291/textures/water.jpg'
 	// var material = new THREE.MeshPhongMaterial( { shininess: 50 } );
+
+	// var texture = THREE.ImageUtils.loadTexture( '../media/img/cs291/textures/water.jpg' );
+	// var material = new THREE.MeshPhongMaterial( { shininess: 50 } );
+	// material.specularMap = texture;
+	// material.color.setHSL( 0.09, 0.46, 0.2 );
+	// material.ambient.copy( material.color );
+	// material.specular.setHSL( 0.09, 0.46, 1.0 );
+
+	// if want to experiment and see the water image as a color texture, use follow:
 	var texture = THREE.ImageUtils.loadTexture( '../media/img/cs291/textures/water.jpg' );
 	var material = new THREE.MeshPhongMaterial( { shininess: 50 } );
-	material.specularMap = texture;
-	material.color.setHSL( 0.09, 0.46, 0.2 );
+	material.map = texture;
+	material.color.setHSL( 0.09, 0.46, 0.8 );
 	material.ambient.copy( material.color );
 	material.specular.setHSL( 0.09, 0.46, 1.0 );
 
