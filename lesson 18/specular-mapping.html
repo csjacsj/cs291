@@ -50,7 +50,9 @@ function fillScene() {
 	scene.add( light );
 	light = new THREE.DirectionalLight( 0xffffff, 0.7 );
 	light.position.set( -200, -100, -400 );
-	scene.add( light );	
+	scene.add( light );
+
+	THREE.TeapotGeometry = THREE.TeapotBufferGeometry;
 	
     var material = createMaterial();
 	var teapot = new THREE.Mesh(
