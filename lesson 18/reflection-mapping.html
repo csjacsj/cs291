@@ -24,7 +24,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 /*global THREE, requestAnimationFrame */
 
-var txrpath = "/";	// STUDENT: set to "" to run on your computer, "/" for submitting code to Udacity
+var txrpath = "../";	// STUDENT: set to "" to run on your computer, "/" for submitting code to Udacity
 
 var camera, scene, renderer;
 var cameraControls;
@@ -48,7 +48,7 @@ function fillScene() {
 	scene.add( light );
 
 	// MATERIALS
-	var path = txrpath + "../media/img/cs291/textures/skybox/";
+	var path = txrpath + "media/img/cs291/textures/skybox/";
 	var urls = [path + "px.jpg", path + "nx.jpg",
 				path + "py.jpg", path + "ny.jpg",
 				path + "pz.jpg", path + "nz.jpg" ];
